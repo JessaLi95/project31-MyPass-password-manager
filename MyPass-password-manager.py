@@ -32,7 +32,6 @@ def copy_password():
     copied_label.grid(column=2, row=6)
     copied_label.config(text="Copied", fg="#9bdeac")
     copied_label.after(1000, lambda: copied_label.grid_forget())
-    # copied_label.grid_forget()
     generate_button.config(text="Generate Password", command=generate_password)
 
 
@@ -105,7 +104,6 @@ copied_label = Label(text="")
 website_label.grid(column=1, row=2)
 username_label.grid(column=1, row=3)
 password_label.grid(column=1, row=4)
-# copied_label.grid(column=2, row=6)
 
 # Button
 search_button = Button(text="Search", width=13, command=search)
